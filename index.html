@@ -114,3 +114,71 @@
     <script src="script.js"></script>
   </body>
 </html>
+  <script>
+        function calculateCompatibility() {
+            console.log("Compatibility Calculations");
+
+            const DESIRED_RESPONSE = [
+                2, /* Strongly Agree */
+                5, /* Agree */
+                4, /* Neutral */
+                4, /* Disagree */
+                4, /* Strongly Disagree */
+            ];
+	
+           const MAX_SCORE = 30;
+           const TOTAL_QUESTIONS = 6;
+           let totalCompatibility = 0;
+
+		
+          // Get selected values from the dropdowns
+            let Q1 = parseInt(document.getElementById("q1").value);
+            let Q2 = parseInt(document.getElementById("q2").value);
+            let Q3 = parseInt(document.getElementById("q3").value);
+            let Q4 = parseInt(document.getElementById("q4").value);
+            let Q5 = parseInt(document.getElementById("q5").value);
+	    let Q6 = parsenInt(document.getElementById("q6").value);
+
+	  console.log("Q1 Response:", Q1);
+            console.log("Q2 Response:", Q2);
+            console.log("Q3 Response:", Q3);
+            console.log("Q4 Response:", Q4);
+            console.log("Q5 Response:", Q5);
+	    console.log("Q5 Response:", Q5);
+
+          // Calculate compatibility for each question
+            let Q1Compatibility = 5 - Math.abs(Q1 - DESIRED_RESPONSE[0]);
+            let Q2Compatibility = 5 - Math.abs(Q2 - DESIRED_RESPONSE[1]);
+            let Q3Compatibility = 5 - Math.abs(Q3 - DESIRED_RESPONSE[2]);
+            let Q4Compatibility = 5 - Math.abs(Q4 - DESIRED_RESPONSE[3]);
+            let Q5Compatibility = 5 - Math.abs(Q5 - DESIRED_RESPONSE[4]);
+	    let Q6Compatibility = 5  - Math.abs(Q6 - DESIRED_RESPONSE[5]);
+
+
+	    let Total = Q1Compatibility + Q2Compatibility + Q3Compatibility + Q4Compatibility + Q5Compatibility + Q6Compatibility;
+            let MaxScore = 25;
+            let Percentage = Math.round((Total / MaxScore) * 100);
+
+            console.log("Final Compatibility:", Percentage);
+			
+			// Determine the message based on the compatibility score
+			let message = getCompatibilityMessage(Percentage)
+		// Display the result and message
+document.getElementById("compatibility").innerHTML = `Youre ${Percentage}% compatible with me! <br> ${message}`;
+}
+function getCompatibilityMessage(percentage) {
+if (percentage >= 90) {
+	return "Yay we share so much in comment you might be my other half <3";
+} else if (percentage >= 70) {
+	return "I mean not 100% but pretty close we can still be friends (:";
+} else if (percentage >= 50) {
+	return "We can totally be friends although we dont share much in common";
+} else if (percentage >= 30) {
+	return "Wow):";
+} else {
+	return "This aint going to work out):";
+}	
+        }
+    </script>
+</body>
+</html>
