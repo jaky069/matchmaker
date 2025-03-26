@@ -63,7 +63,7 @@
 	           <option value="2">Disagree</option>
 	           <option value="1">Strongly Disagree</option>
 	 </select>
-         <br/><br />
+         <br /><br />
 		
         <label for="q4">Football is the best sport in the world  .</label><br />
         <select id="q4">
@@ -73,7 +73,7 @@
 	        <option value="2">Disagree</option>
 	       <option value="1">Strongly Disagree</option>
          </select>
-         <br/ ><br />
+         <br /><br />
      
          <label for "q5">Blue is the most beautiful color.</label><br />
          <select id="q5">
@@ -83,7 +83,7 @@
 	         <option value="2">Disagree</option>
 	         <option value="1">Strongly Disagree</option>
        </select>
-       <br/ ><br />
+       <br /><br />
     
       <label for="q6">Europe is the most beautiful country .</label><br />
       <select id="q6">
@@ -93,17 +93,16 @@
 	      <option value="2">Disagree</option>
 	      <option value="1">Strongly Disagree</option>
     </select>
-    <br/><br/><br />
+    <br /><br /><br />
    <button onclick="calculateCompatibility()">Calculate Compatibility</button>
-		<p id="compatibility"></p>
+   <p id="compatibility"></p>
 
 <script>
- console.log("Starting Matchmaker Lite...");
+ console.log("Starting Matchmaker...");
  function calculateCompatibility(){
          console.log("calculatingCompatibility()");
   
           const DESIRED_RESPONSE = [
-               0,
                5,  /* Strongly Agree */
                4,  /* Agree */
                3,  /* Neither agree nor disagree */
@@ -162,7 +161,7 @@
       console.log("c3="+question3Compatibility);
       console.log("c4="+question4Compatibility);
       console.log("c5="+question5Compatibility);
-     console.log("c6="+question6Compatibility);
+      console.log("c6="+question6Compatibility);
 
      let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility + question4Compatibility + question5Compatibility + question6Compatibility;
 		
