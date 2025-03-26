@@ -27,78 +27,9 @@
            font-size: 12px;
        }
      </style>
-   
-  <body>	 
-	
-    <H1>Jakys Match</h1>
-    <h2>Instructions:</h2>
-     <p>Read the statements below and answer the questions!</p>
-     <h3> Can you be my match? We shall findout!</h3>
-	
-	
-	<label for="q1">Fc Barcelona is the best football team in the world .</label><br />
-	<select id="q1">
-	        <option value="5">Strongly Agree</option>
-	        <option value="4">Agree</option>
-	        <option value="3">Neither agree nor disagree</option>
-	        <option value="2">Disagree</option>
-	        <option value="1">Strongly Disagree</option>
-        </select>
-	<br /><br />
-            
-	    <label for="q2">Leo Messi is better than Cristiano .</label><br />
-            <select id="q2">
-	            <option value="5">Strongly Agree</option>
-	            <option value="4">Agree</option>
-	            <option value="3">Neither agree nor disagree</option>
-	            <option value="2">Disagree</option>
-	           <option value="1">Strongly Disagree</option>
-        </select>
-	<br /><br />
-     
-	   <label for="q3">Myke Towers is the best artist .</label><br />
-           <select id="q3">
-	           <option value="5">Strongly Agree</option>
-	           <option value="4">Agree</option>
-	           <option value="3">Neither agree nor disagree</option>
-	           <option value="2">Disagree</option>
-	           <option value="1">Strongly Disagree</option>
-	 </select>
-         <br/><br />
-		
-        <label for="q4">Football is the best sport in the world  .</label><br />
-        <select id="q4">
-	        <option value="5">Strongly Agree</option>
-	        <option value="4">Agree</option>
-	        <option value="3">Neither agree nor disagree</option>
-	        <option value="2">Disagree</option>
-	       <option value="1">Strongly Disagree</option>
-         </select>
-         <br/ ><br />
-     
-         <label for "q5">Blue is the most beautiful color.</label><br />
-         <select id="q5">
-	         <option value="5">Strongly Agree</option>
-	         <option value="4">Agree</option>
-	         <option value="3">Neither agree nor disagree</option>
-	         <option value="2">Disagree</option>
-	         <option value="1">Strongly Disagree</option>
-       </select>
-       <br/ ><br />
-    
-      <label for="q6">Europe is the most beautiful country .</label><br />
-      <select id="q6">
-	      <option value="5">Strongly Agree</option>
-	      <option value="4">Agree</option>
-	      <option value="3">Neither agree nor disagree</option>
-	      <option value="2">Disagree</option>
-	      <option value="1">Strongly Disagree</option>
-    </select>
-    <br/><br/><br />
-   <button onclick="calculateCompatibility()">Calculate Compatibility</button>
-		<p id="compatibility"></p>
 
- <script>
+
+	 <script>
  console.log("Starting Matchmaker Lite...");
  function calculateCompatibility(){
           console.log("calculatingCompatibility()");
@@ -174,8 +105,76 @@
    document.getElementById("compatibility").innerHTML = "Your compatibility is: " + totalCompatibility + "%";
    }
 
-   </script>
+   </script>   
+  <body>	 
 	
+    <H1>Jakys Match</h1>
+    <h2>Instructions:</h2>
+     <p>Read the statements below and answer the questions!</p>
+     <h3> Can you be my match? We shall findout!</h3>
+	
+	
+	<label for="q1">Fc Barcelona is the best football team in the world .</label><br />
+	<select id="q1">
+	        <option value="5">Strongly Agree</option>
+	        <option value="4">Agree</option>
+	        <option value="3">Neither agree nor disagree</option>
+	        <option value="2">Disagree</option>
+	        <option value="1">Strongly Disagree</option>
+        </select>
+	<br /><br />
+            
+	    <label for="q2">Leo Messi is better than Cristiano .</label><br />
+            <select id="q2">
+	            <option value="5">Strongly Agree</option>
+	            <option value="4">Agree</option>
+	            <option value="3">Neither agree nor disagree</option>
+	            <option value="2">Disagree</option>
+	           <option value="1">Strongly Disagree</option>
+        </select>
+	<br /><br />
+     
+	   <label for="q3">Myke Towers is the best artist .</label><br />
+           <select id="q3">
+	           <option value="5">Strongly Agree</option>
+	           <option value="4">Agree</option>
+	           <option value="3">Neither agree nor disagree</option>
+	           <option value="2">Disagree</option>
+	           <option value="1">Strongly Disagree</option>
+	 </select>
+         <br/><br />
+		
+        <label for="q4">Football is the best sport in the world  .</label><br />
+        <select id="q4">
+	        <option value="5">Strongly Agree</option>
+	        <option value="4">Agree</option>
+	        <option value="3">Neither agree nor disagree</option>
+	        <option value="2">Disagree</option>
+	       <option value="1">Strongly Disagree</option>
+         </select>
+         <br/ ><br />
+     
+         <label for "q5">Blue is the most beautiful color.</label><br />
+         <select id="q5">
+	         <option value="5">Strongly Agree</option>
+	         <option value="4">Agree</option>
+	         <option value="3">Neither agree nor disagree</option>
+	         <option value="2">Disagree</option>
+	         <option value="1">Strongly Disagree</option>
+       </select>
+       <br/ ><br />
+    
+      <label for="q6">Europe is the most beautiful country .</label><br />
+      <select id="q6">
+	      <option value="5">Strongly Agree</option>
+	      <option value="4">Agree</option>
+	      <option value="3">Neither agree nor disagree</option>
+	      <option value="2">Disagree</option>
+	      <option value="1">Strongly Disagree</option>
+    </select>
+    <br/><br/><br />
+   <button onclick="calculateCompatibility()">Calculate Compatibility</button>
+		<p id="compatibility"></p>
 </body>
 </html>
 	
