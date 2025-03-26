@@ -113,6 +113,24 @@
     </div>
     <script src="script.js"></script>
 
+ <script>
+	 console.log("Starting Matchmaker Lite...");
+function calculateCompatibility() {
+  console.log("calculatingCompatibility()");
+  if (!validate()) {
+    return;
+}
+    const DESIRED_RESPONSE = [
+        0,
+        5,  /* Strongly Agree */
+        4,  /* Agree */
+        3,  /* Neither agree nor disagree */
+        2,  /* Disagree */
+        1,  /* Strongly Disagree */
+    ];
+    const MAX_SCORE = 30;
+    const TOTAL_QUESTIONS = 6;
+    let totalCompatibility = 0; </script>
 
 </body>
 </html>
